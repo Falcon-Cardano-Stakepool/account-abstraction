@@ -3,7 +3,7 @@ const hre = require("hardhat");
 async function main() {
 
   
-  const entrypointAddress = "0x119A90966f33CdDDD0B07768E99a1d776E58bcC4"
+  const entrypointAddress = "0x77fCC2F28C5857B4E8B0254633c587809FD98331"
   const AccountFactory = await hre.ethers.getContractFactory("AccountFactory");
   const accountFactory = await AccountFactory.deploy(entrypointAddress);
 
